@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html >
+
+<head>
+    
+    <title>GIF movement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+    
+
+        <div id="div1">
+            <h1>Squishi Cat</h1>
+
+                
+                <div id="container" >
+                    <image id="cat" src="cat.jpg" ></image>
+
+                    <input id="num1" type="number" placeholder="Input num1: " name="num1" / >
+                    <br>
+                    <br>
+
+                    <input id="num2" type="number" placeholder="Input num2: " name="num2" />
+
+                    <br>
+                    <br>
+
+                    <button type="button" onclick="buttonsend()">Switch</button>
+                    <button type="button"   onclick="logout()">logout</button>
+
+                    <script>
+
+                        function buttonsend(){
+                        
+                            var images= document.getElementById('cat');
+                
+                            let a = parseInt(document.getElementById('num1').value)
+                    
+                            let b = parseInt(document.getElementById('num2').value)
+                    
+                            let x = a + b;
+                    
+                            if (x >= 100){
+                                images.src="cat.gif"}else{
+                    
+                                    images.src="cat.jpg"
+                                    
+                                    }
+                    
+                                }
+                        function logout(){
+
+                            window.close('gif.html')
+                            window.open('index.html')
+
+                        }
+                            
+                    </script>
+
+                </div>
+    
+        </div>
+    </center>
+    
+
+</body>
+</html>

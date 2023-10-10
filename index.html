@@ -1,0 +1,52 @@
+!<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <form>
+            <div id="login2">
+                
+                <h1>Log in</h1>
+                <input id="username" type="text" placeholder="Username:" name="username1"/>
+                <br>
+                <input id="password" type="text" placeholder="Password:" name="Password1"/>
+
+                <br>
+                <br>
+                <button id="button1" type="button" onclick="check(this.form)">Login</button>
+                
+            </div>
+        </form>
+    </body>
+
+    <script>
+        function check(form){
+
+            
+
+            if(form.username1.value == "angelo" && form.Password1.value == "123"){
+                window.close('index.html');
+                window.open('gif.html')
+            }else{
+
+                alert("Wrong username or password, try again")
+            }
+
+
+        }
+
+
+
+    </script>
+
+    
+
+
+
+
+
+
+</html>
